@@ -9,32 +9,32 @@
 Proposals follow [this process document](https://tc39.github.io/process-document/).
 This list contains only stage 1 proposals and higher that have not yet been withdrawn/rejected, or become finished.
 
-| 🚀 | Proposal                                                         | Champion                                        | Stage |
-|---|------------------------------------------------------------------|-------------------------------------------------|-------|
-|   | [`Function.prototype.toString` revision][function-to-string]     | Michael Ficarra                                 | 3 |
-|   | [`global`][global]                                               | Jordan Harband                                  | 3 |
-|   | [Rest/Spread Properties][object-rest-spread]                     | Sebastian Markbage                              | 3 |
-|   | [Asynchronous Iteration][async-iteration]                        | Domenic Denicola                                | 3 |
-|   | [`import()`][dynamic-import]                                     | Domenic Denicola                                | 3 |
-|   | [RegExp Lookbehind Assertions][lookbehind]                       | Daniel Ehrenberg                                | 3 |
-|   | [RegExp Unicode Property Escapes][unicode-escapes]               | Brian Terlson, Daniel Ehrenberg, Mathias Bynens | 3 |
-|   | [RegExp named capture groups][named-groups]                      | Daniel Ehrenberg, Brian Terlson                 | 3 |
-|   | [`s` (`dotAll`) flag for regular expressions][dot-all]           | Mathias Bynens, Brian Terlson                   | 3 |
-|   | [Legacy RegExp features in JavaScript][regexp-legacy]            | Mark Miller, Claude Pache                       | 3 |
-|   | [`Promise.prototype.finally`][finally]                           | Jordan Harband                                  | 3 |
-|   | [BigInt][bigint]                                                 | Daniel Ehrenberg                                | 3 |
-|   | [Class Fields][class-fields]                                     | Daniel Ehrenberg, Jeff Morrison                 | 3 |
-|   | [Optional catch binding][optional-catch]                         | Michael Ficarra                                 | 3 |
-|   | [`function.sent` metaproperty][function-sent]                    | Allen Wirfs-Brock                               | 2 |
-|   | [`String.prototype.{trimStart,trimEnd}`][trims]                  | Sebastian Markbage                              | 2 |
-|   | [Class and Property Decorators][decorators]                      | Yehuda Katz and Brian Terlson                   | 2 |
-|   | [`Intl.Segmenter`][intl-segmenter]                               | Daniel Ehrenberg                                | 2 |
-|   | [`import.meta`][import-meta]                                     | Domenic Denicola                                | 2 |
-|   | [`Intl.RelativeTimeFormat`][relative-time]                       | Zibi Braniecki, Daniel Ehrenberg                | 2 |
-|   | [Numeric separators][numeric_separators]                         | Sam Goto                                        | 2 |
-|   | [`export * as ns from "mod";` statements][export-ns-from]        | Ben Newman and John-David Dalton                | 2 |
-|   | [Private methods and accessors][private-methods]                 | Daniel Ehrenberg, Kevin Gibbons                 | 2 |
-|   | [Unified class features][unified-class]                          | Daniel Ehrenberg, Yehuda Katz, Brian Terlson    | 2 |
+| 🚀 | Proposal                                                         | Champion                                        | Stage | Tests |
+|---|------------------------------------------------------------------|-------------------------------------------------|-------|-------|
+|   | [`Function.prototype.toString` revision][function-to-string]     | Michael Ficarra                                 | 3 | [x] [link](tc39/test262#1163)
+|   | [`global`][global]                                               | Jordan Harband                                  | 3 | [x] [link](tc39/test262#765)
+|   | [Rest/Spread Properties][object-rest-spread]                     | Sebastian Markbage                              | 3 | [ ] [link](tc39/test262#865)
+|   | [Asynchronous Iteration][async-iteration]                        | Domenic Denicola                                | 3 | [ ] [link](tc39/test262#923)
+|   | [`import()`][dynamic-import]                                     | Domenic Denicola                                | 3 | [ ] [link](tc39/test262#1164)
+|   | [RegExp Lookbehind Assertions][lookbehind]                       | Daniel Ehrenberg                                | 3 | [x] [link](tc39/test262#999)
+|   | [RegExp Unicode Property Escapes][unicode-escapes]               | Brian Terlson, Daniel Ehrenberg, Mathias Bynens | 3 | [x] [link](tc39/test262#1014)
+|   | [RegExp named capture groups][named-groups]                      | Daniel Ehrenberg, Brian Terlson                 | 3 | [x] [link](tc39/test262#998)
+|   | [`s` (`dotAll`) flag for regular expressions][dot-all]           | Mathias Bynens, Brian Terlson                   | 3 | [x] [link](tc39/test262#997)
+|   | [Legacy RegExp features in JavaScript][regexp-legacy]            | Mark Miller, Claude Pache                       | 3 | [ ] [link](tc39/test262#1165)
+|   | [`Promise.prototype.finally`][finally]                           | Jordan Harband                                  | 3 | [ ] [link](tc39/test262#866)
+|   | [BigInt][bigint]                                                 | Daniel Ehrenberg                                | 3 | [ ] [link](tc39/test262#1056)
+|   | [Class Fields][class-fields]                                     | Daniel Ehrenberg, Jeff Morrison                 | 3 | [ ] [link](tc39/test262#1055)
+|   | [Optional catch binding][optional-catch]                         | Michael Ficarra                                 | 3 | [ ] [link](tc39/test262#1166)
+|   | [`function.sent` metaproperty][function-sent]                    | Allen Wirfs-Brock                               | 2 | [add new][new-test-issue]
+|   | [`String.prototype.{trimStart,trimEnd}`][trims]                  | Sebastian Markbage                              | 2 | [add new][new-test-issue]
+|   | [Class and Property Decorators][decorators]                      | Yehuda Katz and Brian Terlson                   | 2 | [add new][new-test-issue]
+|   | [`Intl.Segmenter`][intl-segmenter]                               | Daniel Ehrenberg                                | 2 | [add new][new-test-issue]
+|   | [`import.meta`][import-meta]                                     | Domenic Denicola                                | 2 | [add new][new-test-issue]
+|   | [`Intl.RelativeTimeFormat`][relative-time]                       | Zibi Braniecki, Daniel Ehrenberg                | 2 | [add new][new-test-issue]
+|   | [Numeric separators][numeric_separators]                         | Sam Goto                                        | 2 | [add new][new-test-issue]
+|   | [`export * as ns from "mod";` statements][export-ns-from]        | Ben Newman and John-David Dalton                | 2 | [add new][new-test-issue]
+|   | [Private methods and accessors][private-methods]                 | Daniel Ehrenberg, Kevin Gibbons                 | 2 | [add new][new-test-issue]
+|   | [Unified class features][unified-class]                          | Daniel Ehrenberg, Yehuda Katz, Brian Terlson    | 2 | [add new][new-test-issue]
 |   | [`Date.parse` fallback semantics][date-parse]                    | Morgan Phillips                                 | 1 |
 |   | [`export v from "mod";` statements][export-from]                 | Ben Newman and John-David Dalton                | 1 |
 | 🚀 | [Observable][observable]                                         | Jafar Husain and Mark Miller                    | 1 |
@@ -118,3 +118,5 @@ Note that as part of the onboarding process your repository name may be normaliz
 [symbol-description]: https://github.com/tc39/proposal-Symbol-description
 [flat]: https://github.com/tc39/proposal-flatMap
 [throw-expressions]: https://github.com/rbuckton/proposal-throw-expressions
+
+[new-test-issue]: https://github.com/tc39/test262/issues/new
